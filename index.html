@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dicionário de Dados - KF Imports</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menuBtn" class="btn ghost" aria-label="Abrir menu de tabelas">Tabelas</button>
+  <div class="brand"><strong>Dicionário de Dados</strong><span>KF Imports - Sistema de Gestão Operacional, Vendas e Assistência Técnica</span></div>
+  <button id="themeBtn" class="btn ghost" aria-label="Alternar tema claro e escuro">Modo escuro</button>
+</header>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Tabelas do banco"><ul id="nav"></ul></nav>
+
+  <main>
+    <section id="identificacao" class="card">
+      <h1>Identificação do projeto</h1>
+      <h2>Escopo</h2>
+      <p>Banco de dados relacional único e centralizado da KF Imports, microempresa com loja física em São Paulo/SP, cobrindo clientes e aparelhos (com IMEI), catálogo e estoque, compras no Brás, ordens de serviço, vendas de balcão, caixa, estornos, garantia, usuários e perfis, auditoria e privacidade (LGPD). Não emite documentos fiscais.</p>
+      <h2>Tecnologia</h2>
+      <p>MySQL 8.4 LTS, InnoDB, utf8mb4, collation utf8mb4_0900_ai_ci, schema <code>assistencia_tecnica</code> (22 tabelas, 36 chaves estrangeiras com ON DELETE/UPDATE RESTRICT).</p>
+      <h2>Responsáveis</h2>
+      <ul class="people">
+        <li><strong>Kaique Vieira</strong> - Data Owner (regras de negócio), representante da KF Imports.</li>
+        <li><strong>Guilherme Lima Araujo</strong> (RGM 47058773) - Data Steward; líder do grupo e análise de requisitos.</li>
+        <li><strong>Diogo Cora</strong> (RGM 47071974) - Data Steward; análise de negócio e regras.</li>
+        <li><strong>Arthur Henrique Alves</strong> (RGM 47332361) - Data Steward; mapeamento de entidades e restrições.</li>
+        <li><strong>Giovanni Henrique Tartaro</strong> (RGM 47048026) - Data Steward; mapeamento de entidades e restrições.</li>
+        <li><strong>Júlio César Rocha</strong> (RGM 47422432) - Data Steward; revisão final e rastreabilidade.</li>
+        <li><strong>Vitor Arruda dos Santos</strong> (RGM 47351241) - Data Steward; revisão final e rastreabilidade.</li>
+        <li><strong>Prof. Diego Marques de Carvalho</strong> - Professor orientador (UNICID, Modelagem de Banco de Dados).</li>
+      </ul>
+    </section>
+
+    <section class="card controls" aria-label="Painel de controle">
+      <a class="btn primary" href="docs/Especificacao_Requisitos_Regras_Negocio_BD.pdf" download>Baixar Especificação de Requisitos (PDF)</a>
+      <button id="derBtn" class="btn primary">Abrir DER</button>
+      <input id="search" type="search" placeholder="Filtrar por tabela ou coluna" aria-label="Filtrar por tabela ou coluna">
+      <p class="legend">RBAC: At = Atendente, Téc = Técnico, Ger = Gerente, Adm = Administrador. C criar, R ler, U atualizar, I inativar, "-" negado. DELETE físico é negado a todos (RN10).
+        Privacidade: <span class="badge dps">DPS</span> dado pessoal sensível ou de alto risco, <span class="badge dp">DP</span> dado pessoal, <span class="badge na">N/A</span> não aplicável.</p>
+    </section>
+
+    <div id="dict"></div>
+    <p id="empty" hidden>Nenhuma tabela ou coluna corresponde ao filtro. Apague parte do texto para ver os resultados.</p>
+  </main>
+</div>
+
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Diagrama Entidade-Relacionamento">
+  <div class="modal-bar">
+    <strong>DER - assistencia_tecnica</strong>
+    <span>
+      <button id="zin" class="btn ghost">Zoom +</button>
+      <button id="zout" class="btn ghost">Zoom -</button>
+      <button id="zreset" class="btn ghost">Reset</button>
+      <button id="zclose" class="btn primary">Fechar</button>
+    </span>
+  </div>
+  <div id="stage" class="stage"><img id="der" src="assets/der.png" alt="Diagrama Entidade-Relacionamento do banco assistencia_tecnica" draggable="false"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
