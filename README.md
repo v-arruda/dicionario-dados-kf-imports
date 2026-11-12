@@ -1,5 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34721907/README.md)
-
 # KF Imports - Dicionário de Dados
 
 **Sistema de Gestão Operacional, Vendas e Assistência Técnica**
@@ -34,7 +32,7 @@ Documentação de governança de dados do banco `assistencia_tecnica` (MySQL 8.4
 10. [O que está dentro e fora do escopo](#10-o-que-está-dentro-e-fora-do-escopo)
 11. [O dicionário de dados interativo](#11-o-dicionário-de-dados-interativo)
 12. [Estrutura do repositório](#12-estrutura-do-repositório)
-13. [Como executar localmente e publicar](#13-como-executar-localmente-e-publicar)
+13. [Como executar localmente](#13-como-executar-localmente)
 14. [Equipe e responsabilidades](#14-equipe-e-responsabilidades)
 
 ---
@@ -256,16 +254,11 @@ Recursos da página:
 
 Os nomes de arquivos e pastas devem ser mantidos exatamente assim, em minúsculas. O servidor do GitHub Pages diferencia maiúsculas de minúsculas.
 
-## 13. Como executar localmente e publicar
+## 13. Como executar localmente
 
-**Localmente:** baixe o repositório e abra o `index.html` no navegador. É necessária conexão com a internet apenas para carregar a biblioteca Panzoom (zoom do DER).
+Baixe o repositório e abra o `index.html` no navegador. É necessária conexão com a internet apenas para carregar a biblioteca Panzoom (zoom do DER).
 
-**Publicação no GitHub Pages:**
-
-1. Envie os arquivos para um repositório público.
-2. Acesse **Settings > Pages > Build and deployment**.
-3. Em **Source**, escolha **Deploy from a branch**; em **Branch**, escolha **main** e a pasta **/ (root)**; clique em **Save**.
-4. Após alguns minutos, o site estará em `https://v-arruda.github.io/dicionario-dados-kf-imports/`.
+A versão publicada está disponível em `https://v-arruda.github.io/dicionario-dados-kf-imports/`.
 
 ## 14. Equipe e responsabilidades
 
