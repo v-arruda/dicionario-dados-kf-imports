@@ -1,11 +1,12 @@
-[README.md](https://github.com/user-attachments/files/34721507/README.md)
+[README.md](https://github.com/user-attachments/files/34721907/README.md)
+
 # KF Imports - Dicionário de Dados
 
 **Sistema de Gestão Operacional, Vendas e Assistência Técnica**
 
 Documentação de governança de dados do banco `assistencia_tecnica` (MySQL 8.4 LTS), publicada como um dicionário de dados interativo.
 
-> **Acesse o dicionário online:** [https://v-arruda.github.io/Dicion-rio--dados-KF-imports/](https://v-arruda.github.io/Dicion-rio--dados-KF-imports/)
+> **Acesse o dicionário online:** [https://v-arruda.github.io/dicionario-dados-kf-imports/](https://v-arruda.github.io/dicionario-dados-kf-imports/)
 
 | | |
 |---|---|
@@ -264,7 +265,7 @@ Os nomes de arquivos e pastas devem ser mantidos exatamente assim, em minúscula
 1. Envie os arquivos para um repositório público.
 2. Acesse **Settings > Pages > Build and deployment**.
 3. Em **Source**, escolha **Deploy from a branch**; em **Branch**, escolha **main** e a pasta **/ (root)**; clique em **Save**.
-4. Após alguns minutos, o site estará em `https://v-arruda.github.io/Dicion-rio--dados-KF-imports/`.
+4. Após alguns minutos, o site estará em `https://v-arruda.github.io/dicionario-dados-kf-imports/`.
 
 ## 14. Equipe e responsabilidades
 
