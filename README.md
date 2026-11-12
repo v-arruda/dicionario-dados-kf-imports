@@ -32,8 +32,7 @@ Documentação de governança de dados do banco `assistencia_tecnica` (MySQL 8.4
 10. [O que está dentro e fora do escopo](#10-o-que-está-dentro-e-fora-do-escopo)
 11. [O dicionário de dados interativo](#11-o-dicionário-de-dados-interativo)
 12. [Estrutura do repositório](#12-estrutura-do-repositório)
-13. [Como executar localmente](#13-como-executar-localmente)
-14. [Equipe e responsabilidades](#14-equipe-e-responsabilidades)
+13. [Equipe e responsabilidades](#13-equipe-e-responsabilidades)
 
 ---
 
@@ -252,15 +251,7 @@ Recursos da página:
     └── der.png
 ```
 
-Os nomes de arquivos e pastas devem ser mantidos exatamente assim, em minúsculas. O servidor do GitHub Pages diferencia maiúsculas de minúsculas.
-
-## 13. Como executar localmente
-
-Baixe o repositório e abra o `index.html` no navegador. É necessária conexão com a internet apenas para carregar a biblioteca Panzoom (zoom do DER).
-
-A versão publicada está disponível em `https://v-arruda.github.io/dicionario-dados-kf-imports/`.
-
-## 14. Equipe e responsabilidades
+## 13. Equipe e responsabilidades
 
 | Nome | RGM | Papel |
 |---|---|---|
